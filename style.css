@@ -1,0 +1,57 @@
+body {
+    background-image: url('baldi.jpeg');
+    background-size: 75px 75px;
+    animation: scrollBackground 5s linear infinite;
+}
+
+/* bg anim */
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 150px 150px;
+    }
+}
+
+/* text */
+body {
+    color: white;
+    font-family: Comic Sans MS;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+/* h1 */
+h1 {
+    text-align: center;
+    color: wheat;
+    animation: flyUpDown 2s ease-in-out infinite;
+}
+
+/*h1 anim */
+@keyframes flyUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* button */
+button {
+    background-color: lightgreen;
+    transition: .3s ease all;
+    font: 2.2em Comic Sans MS;
+    border: 2px solid black;
+}
+
+/* button anim */
+button:hover {
+    background-color: skyblue; 
+    transition: .3s ease all;
+    transform: translateY(-5px);
+}
