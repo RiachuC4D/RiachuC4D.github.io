@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="assets/icon.png">
+		<link rel="icon" href="assets/images/icon.png">
 		<title>Riachu's Awesome Page</title>
 	</head>
 	
@@ -13,13 +13,34 @@
 				<marquee behavior="scroll" direction="left">hello im riachu uhh yeah this website is a wip soo uhh good job finding or something lol anyways do you like object shows my favorite object show is bfdia uhh yeah i also draw and animate and stuff and i guess i code as well as shown with this website but i wouldn't really call it a main trait you know</marquee>
 			</div>
 
-			<div id="spinningbaldo">
-				<img src="assets/icon.png" style="width: 10%; height: 10%;">
+			<div id="baldo">
+				<img src="assets/images/icon.png" style="width: 10%; height: 10%;">
 			</div>
-			
-			<div class="button-container">
-				<button>teeest</button>
+
+			<div class="testbutton-container">
+				<button class="testbutton">teeest</button>
 			</div>
 		</div>
+
+		<div class="code-container">
+			<div id="code">
+				<input id="display" readonly>
+				<div id="keys">
+					<button onclick="add('1')">1</button>
+					<button onclick="add('2')">2</button>
+					<button onclick="add('3')">3</button>
+					<button onclick="add('4')">4</button>
+					<button onclick="add('5')">5</button>
+					<button onclick="add('6')">6</button>
+					<button onclick="add('7')">7</button>
+					<button onclick="add('8')">8</button>
+					<button onclick="add('9')">9</button>
+					<button onclick="add('0')">0</button>
+					<button onclick="enter()">=</button>
+					<button onclick="clearDisplay()">C</button>
+				</div>
+		</div>
+		
+		<script src="javascript/code.js"></script>
 	</body>
 </html>

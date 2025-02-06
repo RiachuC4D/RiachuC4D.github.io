@@ -1,10 +1,10 @@
 body {
-    cursor: url('assets/cursor.png'), auto;
+    cursor: url('assets/images/cursor.png'), auto;
 }
 
 /* bg */
 body {
-    background-image: url('assets/baldi.jpeg');
+    background-image: url('assets/images/baldi.jpeg');
     background-size: 75px 75px;
     animation: scrollBackground 5s linear infinite;
 }
@@ -23,8 +23,13 @@ body {
 body {
     color: white;
     font-family: Comic Sans MS;
-    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    text-shadow: 
+        -3px -3px 0 #000,  
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000;
 }
+
 
 #header {
     background-color: rgb(35, 40, 50);
@@ -32,6 +37,7 @@ body {
     margin-left: 75px;
     margin-right: 75px;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 0.5px;
     padding-left: 50px;
     padding-right: 50px;
@@ -48,7 +54,7 @@ body {
     padding-bottom: 5px;
 }
 
-#spinningbaldo {
+#baldo {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -74,13 +80,18 @@ h1 {
     }
 }
 
+.testbutton-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* p */
 p {
     font-size: 1.5em;
 }
 
 /* button */
-button {
+.testbutton {
     background-color: lightgreen;
     transition: .3s ease all;
     font: 2.2em Comic Sans MS;
@@ -91,20 +102,36 @@ button {
 }
 
 /* button hover */
-button:hover {
+.testbutton:hover {
     background-color: skyblue;
     transition: .3s ease all;
     transform: translateY(-5px);
 }
 
 /* button active */
-button:active {
+.testbutton:active {
     background-color: rgb(0, 132, 255);
     transition: .0s ease all;
 }
 
-/* centering button */
-.button-container {
+.code-container {
     display: flex;
     justify-content: center;
+}
+
+#code {
+    background-color: rgb(35, 40, 50);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
 }
